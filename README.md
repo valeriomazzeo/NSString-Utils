@@ -1,7 +1,7 @@
 # NSString+Utils
 [![Build Status](http://img.shields.io/travis/valeriomazzeo/NSString-Utils/development,master.svg?style=flat)](https://travis-ci.org/valeriomazzeo/NSString+Utils)
-[![Pod Version](http://img.shields.io/cocoapods/v/NSString+Utils.svg?style=flat)]
-[![Pod Platform](http://img.shields.io/cocoapods/p/NSString+Utils.svg?style=flat)]
+![Pod Version](http://img.shields.io/cocoapods/v/NSString+Utils.svg?style=flat)
+![Pod Platform](http://img.shields.io/cocoapods/p/NSString+Utils.svg?style=flat)
 [![Pod License](http://img.shields.io/cocoapods/l/NSString+Utils.svg?style=flat)](http://opensource.org/licenses/MIT)
 
 ## GETTING STARTED
