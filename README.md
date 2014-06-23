@@ -1,4 +1,9 @@
 # NSString+Utils
+[![Build Status](http://img.shields.io/travis/valeriomazzeo/NSString+Utils/development,master.svg?style=flat)](https://travis-ci.org/valeriomazzeo/NSString+Utils)
+[![Pod Version](http://img.shields.io/cocoapods/v/NSString+Utils.svg?style=flat)](http://cocoadocs.org/docsets/NSString+Utils/)
+[![Pod Platform](http://img.shields.io/cocoapods/p/NSString+Utils.svg?style=flat)](http://cocoadocs.org/docsets/NSString+Utils/)
+[![Pod License](http://img.shields.io/cocoapods/l/NSString+Utils.svg?style=flat)](http://opensource.org/licenses/MIT)
+
 ## GETTING STARTED
 
 NSString (Utils) extends the NSString class to provide additional functionalities.
