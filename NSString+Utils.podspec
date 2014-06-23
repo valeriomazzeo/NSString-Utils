@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name     = 'NSString+Utils'
   s.version  = '0.1.0'
   s.license  = 'MIT'
-  s.summary  = 'NSString (Utils) extends the NSString class to provide additional functionality.'
+  s.summary  = 'NSString (Utils) extends the NSString class to provide additional functionalities.'
   s.homepage = 'https://github.com/valeriomazzeo/NSString-Utils'
   s.authors  = {'Valerio Mazzeo' => 'valerio.mazzeo@gmail.com'}
   s.source   = { :git => 'https://github.com/valeriomazzeo/NSString-Utils.git', :tag => '0.1.0' }

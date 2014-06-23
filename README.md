@@ -1,7 +1,7 @@
 # NSString+Utils
 ## GETTING STARTED
 
-NSString (Utils) extends the NSString class to provide additional functionality.
+NSString (Utils) extends the NSString class to provide additional functionalities.
 
 
 ## USAGE
