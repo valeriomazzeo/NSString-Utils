@@ -21,5 +21,7 @@
 - (NSString *)stringByEnsuringNoSuffix:(NSString *)suffix;
 
 - (NSString*)stringByAppendingQueryParameters:(NSDictionary *)parameters;
+- (NSString *)stringByAppendingQueryParameters:(NSDictionary *)parameters ordered:(BOOL)ordered;
+
 
 @end

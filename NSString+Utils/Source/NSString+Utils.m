@@ -80,14 +80,26 @@
     }    
 }
 
-- (NSString*)stringByAppendingQueryParameters:(NSDictionary *)parameters
+- (NSString *)stringByAppendingQueryParameters:(NSDictionary *)parameters
+{
+    return [self stringByAppendingQueryParameters:parameters ordered:NO];
+}
+
+- (NSString *)stringByAppendingQueryParameters:(NSDictionary *)parameters ordered:(BOOL)ordered
 {
     NSMutableString *URLWithQuerystring = [[NSMutableString alloc] initWithString:self];
     
-    for (id key in parameters) {
+    NSArray *keys;
+    
+    if (ordered) {
+        keys = [parameters.allKeys sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+    } else {
+        keys = parameters.allKeys;
+    }
+    
+    for (NSString *key in keys) {
         
-        NSString *keyString = [key description];
-        NSString *valueString = [[parameters objectForKey:key] description];
+        NSString *valueString = [parameters objectForKey:key];
         
         NSRange questionMarkRange = [URLWithQuerystring rangeOfString:@"?"];
         
@@ -98,7 +110,7 @@
         URLWithQuerystring = [[URLWithQuerystring stringByEnsuringNoSuffix:parameterPrefix] mutableCopy];
         
         [URLWithQuerystring appendFormat:formatString,
-         [keyString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
+         [key stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
          [valueString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     }
     
