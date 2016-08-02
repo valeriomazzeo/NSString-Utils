@@ -1,8 +1,4 @@
 language: objective-c
 xcode_sdk: iphonesimulator
-
-before_install:
-  - brew update
-  - brew upgrade xctool
   
 script: Travis/script.sh
